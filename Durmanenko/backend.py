@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.exc import IntegrityError
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://your_username:your_password@localhost/your_database'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://admin:admin@localhost/127.0.0.1@5432'
 db = SQLAlchemy(app)
 
 class AnalyticalReport(db.Model):
